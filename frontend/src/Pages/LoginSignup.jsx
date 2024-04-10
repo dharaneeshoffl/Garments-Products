@@ -20,7 +20,7 @@ export default function LoginSignup() {
   const login = async () => {
     console.log("Login function Executed", formData);
     let responseData;
-    await fetch(`${process.env.REACT_APP_BACKEND_URL}/login`, {
+    await fetch(`http://localhost:4000/login`, {
       method: "POST",
       headers: {
         Accept: "application/form-data",
@@ -43,7 +43,7 @@ export default function LoginSignup() {
   const signup = async () => {
     console.log("Sign up function executed", formData);
     let responseData;
-    await fetch(`${process.env.REACT_APP_BACKEND_URL}/signup`, {
+    await fetch(`http:localhost:4000/signup`, {
       method: "POST",
       headers: {
         Accept: "application/form-data",
